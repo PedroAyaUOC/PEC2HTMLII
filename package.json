@@ -1,15 +1,15 @@
 {
-  "name": "PEC2",
-  "version": "1.0",
+  "name": "pec2",
+  "version": "1.0.0",
   "private": true,
   "description": "Solución PEC2 Herramientas HTLM y CSS II",
   "scripts": {
+    "stylelint": "stylelint src/**/*.scss",
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean stylelint parcel:build",
-    "stylelint": "stylelint src/**/*.scss",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "web": "dist/index.html",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/PedroAyaUOC/PEC2HTMLII.git"
   },
   "author": {
     "name": "Pedro Ayala",
@@ -32,9 +32,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+    "url": "https://github.com/PedroAyaUOC/PEC2HTMLII/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/PedroAyaUOC/PEC2HTMLII",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.2.0",
     "autoprefixer": "^10.4.2",
@@ -44,7 +44,7 @@
     "posthtml-include": "^1.7.2",
     "rimraf": "^3.0.2",
     "sharp": "^0.29.3",
-    "stylelint": "^14.7.1",
+    "stylelint": "^14.8.2",
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-scss": "^4.2.0"
   },
