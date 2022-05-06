@@ -32,6 +32,11 @@ header .logo{
     margin: 0px 20px;
 }
 
+@media screen and (max-width: 600px), screen and (orientation: portrait){
+	header .logo{width:160px; margin: 0 !important;}
+    
+}
+
 #posterPage header{
     border-bottom: none;
     -webkit-box-shadow: none;
